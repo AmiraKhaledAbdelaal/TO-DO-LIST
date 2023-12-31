@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container my-5 shadow-lg py-3">
+        <input id="prodname" type="text" placeholder="enter name product" class="form-control my-3 p-2">
+        <input id="prodprice" type="number" placeholder="enter price" class="form-control my-3 p-2">
+        <input id="proddesc" type="text" placeholder="enter describe" class="form-control my-3 p-2">
+        <button id="btn1" onclick="addproduct()" class="btn btn-info d-block">add product</button>
+        <button id="btn2" onclick="changecontent()" class="btn btn-info d-none">update product</button>
+        <input id="search" onkeyup="search(this.value)" type="text" class="form-control w-25 my-3 p-2 mx-auto"
+            placeholder="search">
+    </div>
+
+    <div class="container">
+        <table class="table table-hover text-center shadow-lg">
+            <thead>
+                <th>name</th>
+                <th>price</th>
+                <th>describe</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="demo">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
